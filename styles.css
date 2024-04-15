@@ -1,0 +1,148 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body height to 100% */
+body {
+    height: 100%;
+}
+
+/* Set box-sizing to border-box for all elements */
+html {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #24276A;
+    color: white;
+    height: 101px;
+    z-index: 1000;
+    position: 60;
+    padding: 1.3rem 2rem;
+    font-family: "PP Neue Montreal TT", sans-serif;   
+}
+
+.nav-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5.5%;
+}
+
+.logo {
+    height: 60px;
+}
+
+
+.header nav ul li {
+    padding: 0 10px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header nav ul li.hamburger {
+    display: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.button{
+    background-color: #E7F7FB;
+    border-radius: 22.7947px;
+    padding: 1.11em 2.25em;
+    color: #0AB3D2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "PP Neue Montreal TT", sans-serif;   
+    line-height: 29.9931px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #0AB3D2;
+    color: #ffffff;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    flex-direction: column;
+
+}
+
+.burger-img{
+    max-height: 30px;
+    max-width: 40px;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .header nav ul li { 
+        display: none; 
+    }
+    .header nav ul li.hamburger {
+        display: block;
+    }
+    .nav-items { 
+        display: none; 
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header nav ul li { 
+        display: none; 
+    }
+    .header nav ul li.hamburger {
+        display: block;
+    }
+    .nav-items { 
+        display: none; 
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .header nav ul li { 
+        display: inline-block; 
+    }
+    .header nav ul li.hamburger {
+        display: none;
+    }
+    .nav-items { 
+        display: flex; 
+    }
+    .hamburger {
+        display: none;
+    }
+}
