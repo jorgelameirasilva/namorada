@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <div class="header">
         <div class="nav-parent">
             <img src="/logo.png" class="logo" alt="Logo description" />
-            <nav >
+            <nav>
                 <ul class="nav-items">
                     <li><a href="#">Open and electro surgery</a></li>
                     <li><a href="#">Minimal invasive surgery</a></li>
@@ -24,13 +25,38 @@
                         <button class="button">Discover our products</button>
                     </div>
                 </ul>
-                <div class="hamburger">
-                    <img class="burger-img" src="/burger.svg" alt="Hamburger menu" />
-                </div>
+                <a class="toggler-navbar" onclick="toogleClass()">
+                    <div class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
             </nav>
+        </div>
+    </div>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-elements">
+
+            <ul>
+                <li><a href="#">Open and electro surgery</a></li>
+                <li><a href="#">Minimal invasive surgery</a></li>
+                <li><a href="#">Stapling devices</a></li>
+                <li><a href="#">Circular services</a></li>
+            </ul>
+
+            <ul class="footer-side-bar">
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Ons verhaal</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
         </div>
     </div>
 </body>
 </body>
+
 
 </html>
